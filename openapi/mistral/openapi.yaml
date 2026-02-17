@@ -481,12 +481,12 @@ paths:
                 $ref: '#/components/schemas/HTTPValidationError'
       tags:
         - beta.agents
-  /v1/conversations#stream:
+  /v1/conversations/stream:
     post:
       summary: Create a conversation and append entries to it.
       description: Create a new conversation, using a base model or an agent and append
         entries. Completion and tool executions are run and the response is appended
-        to the conversation.Use the returned conversation_id to continue the conversation.
+        to the conversation. Use the returned conversation_id to continue the conversation.
       operationId: agents_api_v1_conversations_start_stream
       requestBody:
         required: true
@@ -509,7 +509,8 @@ paths:
                 $ref: '#/components/schemas/HTTPValidationError'
       tags:
         - beta.conversations
-  /v1/conversations/{conversation_id}#stream:
+
+  /v1/conversations/{conversation_id}/stream:
     post:
       summary: Append new entries to an existing conversation.
       description: Run completion on the history of the conversation and the user
@@ -545,7 +546,8 @@ paths:
                 $ref: '#/components/schemas/HTTPValidationError'
       tags:
         - beta.conversations
-  /v1/conversations/{conversation_id}/restart#stream:
+
+  /v1/conversations/{conversation_id}/restart/stream:
     post:
       summary: Restart a conversation starting from a given entry.
       description: Given a conversation_id and an id, recreate a conversation from
@@ -893,11 +895,7 @@ paths:
             title: Dry Run
             type: boolean
           required: false
-          description: "* If `true` the job is not spawned, instead the query returns\
-          \ a handful of useful metadata\n  for the user to perform sanity checks\
-          \ (see `LegacyJobMetadataOut` response).\n* Otherwise, the job is started\
-          \ and the query returns the job ID along with some of the\n  input parameters\
-          \ (see `JobOut` response).\n"
+          description: "* If `true` the job is not spawned, instead the query returns a handful of useful metadata\n  for the user to perform sanity checks (see `LegacyJobMetadataOut` response).\n* Otherwise, the job is started and the query returns the job ID along with some of the\n  inpuT parameters (see `JobOut` response).\n"
       responses:
         '200':
           description: OK
