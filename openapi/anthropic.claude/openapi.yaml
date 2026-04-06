@@ -2119,7 +2119,7 @@ paths:
     post:
       tags:
         - Messages
-        - ai-content
+        - text-generation
       summary: Create a chat completion
       description: Creates a chat completion with the specified model and parameters. The response is generated based on the provided messages and system prompt.
       security:
@@ -2382,7 +2382,7 @@ paths:
     post:
       tags:
         - Message Batches
-        - ai-content
+        - text-generation
       summary: Create multiple chat completions in a batch
       security:
         - ApiKeyAuth: []

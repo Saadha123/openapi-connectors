@@ -21,7 +21,7 @@ paths:
   /completions:
     post:
       tags:
-        - ai-content
+        - text-generation
       summary: Creates a completion for the provided prompt, parameters and chosen model.
       operationId: Completions_Create
       parameters:
@@ -354,7 +354,7 @@ paths:
   /chat/completions:
     post:
       tags:
-        - ai-content
+        - text-generation
       summary: Creates a completion for the chat message
       operationId: ChatCompletions_Create
       parameters:
