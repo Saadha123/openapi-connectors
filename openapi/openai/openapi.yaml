@@ -827,7 +827,6 @@ paths:
       operationId: createImage
       tags:
         - Images
-        - ai-content
       summary: Creates an image given a prompt.
       requestBody:
         required: true
@@ -896,7 +895,6 @@ paths:
       operationId: createImageEdit
       tags:
         - Images
-        - ai-content
       summary: Creates an edited or extended image given an original image and a prompt.
       requestBody:
         required: true
@@ -1035,7 +1033,6 @@ paths:
       operationId: createEmbedding
       tags:
         - Embeddings
-        - ai-content
       summary: Creates an embedding vector representing the input text.
       requestBody:
         required: true
@@ -1116,7 +1113,6 @@ paths:
       operationId: createSpeech
       tags:
         - Audio
-        - ai-content
       summary: Generates audio from the input text.
       requestBody:
         required: true

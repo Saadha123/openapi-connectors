@@ -587,7 +587,6 @@ paths:
                 $ref: '#/components/schemas/HTTPValidationError'
       tags:
         - beta.conversations
-        - ai-content
   /v1/files:
     post:
       operationId: files_api_routes_upload_file
@@ -1335,7 +1334,6 @@ paths:
                 $ref: '#/components/schemas/HTTPValidationError'
       tags:
         - embeddings
-        - ai-content
   /v1/moderations:
     post:
       summary: Moderations

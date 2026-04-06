@@ -4115,7 +4115,6 @@ paths:
     post:
       tags:
         - Experimental - Prompt Tools
-        - ai-content
       summary: Generate Prompt
       description: Generates a prompt for a given input
       security:
@@ -4226,7 +4225,6 @@ paths:
     post:
       tags:
         - Experimental - Prompt Tools
-        - ai-content
       summary: Improve Prompt
       description: Improves a prompt for a given input
       security:

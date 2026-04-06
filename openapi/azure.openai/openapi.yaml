@@ -252,8 +252,6 @@ paths:
                 type: string
   /embeddings:
     post:
-      tags:
-        - ai-content
       summary: Get a vector representation of a given input that can be easily consumed by machine learning models and algorithms.
       operationId: embeddings_create
       parameters:
@@ -460,8 +458,6 @@ paths:
                 description: Transcribed text in the output format (when response_format was one of text, vtt or srt).
   /images/generations:
     post:
-      tags:
-        - ai-content
       summary: Generates a batch of images from a text caption on a given DALLE model deployment
       operationId: ImageGenerations_Create
       requestBody:
